@@ -3,6 +3,7 @@ import bs4 as bs
 import urllib
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from bs4 import BeautifulSoup
+nltk.downloader.download('vader_lexicon')
 # import webbrowser
 # new = 2
 def cyn(val):
@@ -41,7 +42,7 @@ def sentiment_analyse(info, happy_news, sad_news):
 		sad_news.append(info)
 
 def print_happy_news(news):
-	file = "/home/sankalp/h1/templates/h.html"
+	file = "templates/h.html"
 	l = open(file, "w")
 	text = """
 	<!DOCTYPE html>
@@ -152,7 +153,7 @@ def print_happy_news(news):
 	# url = "file:///home/sankalp/p1/h.html"
 	# webbrowser.open(url,new=new)
 def print_sad_news(news):
-	file = "/home/sankalp/h1/templates/s.html"
+	file = "templates/s.html"
 	l = open(file, "w")
 	text = """
 	<!DOCTYPE html>
@@ -262,9 +263,9 @@ def print_sad_news(news):
 	# webbrowser.open(url,new=new)
 	return yes
 def print_all_news(news):
-	file = "/home/sankalp/p1/n.html"
+	file = "templates/n.html"
 	if 1:
-		l = open("/home/sankalp/h1/templates/n.html", "w")
+		l = open(file, "w")
 		text = """
 		<!DOCTYPE html>
 		<html>
