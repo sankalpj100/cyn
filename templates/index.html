@@ -3,22 +3,17 @@
 <html>
 <head>
 <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=yes">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <style>
 * {
   box-sizing: border-box;
 }
-@font-face {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-/* Add a gray background color with some padding */
+
 body {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: Georgia,Times,Times New Roman,serif;
   padding: 20px;
   background: #f1f1f1;
 }
 
-/* Header/Blog Title */
 .header {
   padding: 10px;
   font-size: 25px;
@@ -26,13 +21,19 @@ body {
   background: white;
   height: 100%;
   border-radius: 10px;
-}/* Header/Blog Title */
+}
+.description {
+  font-size: 12px;
+  text-align: center;
+  color: #2d7535;
+  font-style: italic;
+  line-height: 15px;
+}
 .footer {
-  /*padding: 10px 10px;*/
   font-size: 20px;
   text-align: center;
   color: #2d7535;
-  /*border-radius: 10px;*/
+  border-radius: 10px;
   font-style: italic;
 }
 
@@ -47,7 +48,7 @@ body {
 	display:block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Trebuchet MS;
+	font-family: Georgia,Times,Times New Roman,serif;
 	font-size:30px;
 	font-weight:bold;
 	padding:20px 60px;
@@ -63,14 +64,11 @@ body {
 	position:relative;
 	top:1px;
 }
-/* Create two unequal columns that floats next to each other */
-/* Left column */
 .leftcolumn {   
   float: left;
   width: 75%;
 }
 
-/* Right column */
 .rightcolumn {
   float: left;
   width: 25%;
@@ -79,7 +77,6 @@ body {
 
 
 
-/* Add a card effect for articles */
 .card {
    background-color: white;
    padding: 10px;
@@ -87,10 +84,10 @@ body {
    border-radius: 10px
    height:auto;
    width: auto;
-   /*resize: auto;*/
+ 
 }
 
-/* Clear floats after the columns */
+
 .row:after {
   content: "";
   display: table;
@@ -98,7 +95,7 @@ body {
 }
 
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
@@ -110,9 +107,18 @@ body {
 <body>
 
 <div class="header">
-  <h2>ChooseYourNews</h2>
+  <h2>NewsVibes</h2>
 </div>
-
+<div class="card">
+<div class="description">
+	<p>
+	According to your vibes, be it happy or sad,
+	</p>
+	<p> 
+	Read the news, what you thought could have had!
+	</p>
+</div>
+</div>
 <!-- <div class="row"> -->
 <div class="row">
 <div class="card">
@@ -143,7 +149,7 @@ body {
 </div>
 <div class="card">
 <div class="footer">
-	<h>Developed by Sankalp Jaiswal</h>
+	<h>Developed by Sankalp Jaiswal &#169</h>
 </div>
 </div>
 </body>
