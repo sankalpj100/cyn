@@ -54,7 +54,7 @@ def print_happy_news(news):
 
 	/* Add a gray background color with some padding */
 	body {
-	  font-family: "Trebuchet MS", Helvetica, sans-serif;
+	  font-family: Georgia,Times,Times New Roman,serif;;
 	  padding: 20px;
 	  background: #f1f1f1;
 	}
@@ -163,7 +163,7 @@ def print_sad_news(news):
 
 	/* Add a gray background color with some padding */
 	body {
-	  font-family: "Trebuchet MS", Helvetica, sans-serif;
+	  font-family: Georgia,Times,Times New Roman,serif;
 	  padding: 20px;
 	  background: #f1f1f1;
 	}
@@ -273,7 +273,7 @@ def print_all_news(news):
 
 		/* Add a gray background color with some padding */
 		body {
-		  font-family: "Trebuchet MS", Helvetica, sans-serif;
+		  font-family: Georgia,Times,Times New Roman,serif;
 		  padding: 20px;
 		  background: #f1f1f1;
 		}
