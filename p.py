@@ -4,10 +4,8 @@ import urllib
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from bs4 import BeautifulSoup
 nltk.downloader.download('vader_lexicon')
-# import webbrowser
-# new = 2
+
 def cyn(val):
-	# mood = input("WELCOME TO MOODY NEWS! \n For ALL NEWS :o Enter A! \n For HAPPY NEWS :) Enter H! \n For SAD NEWS :( Enter S! \n")
 	if 1:	
 		source = urllib.request.urlopen("https://www.indiatoday.in/top-stories").read()
 		soup = bs.BeautifulSoup(source, 'html.parser')
@@ -128,7 +126,7 @@ def print_happy_news(news):
 	</div>
 	<div class="card">
 	<div class="footer">
-		<h>Developed by Sankalp Jaiswal</h>
+		<h>Developed by Sankalp Jaiswal &#169</h>
 	</div>
 	</div>
 	</body>
@@ -149,9 +147,7 @@ def print_happy_news(news):
 	l.close()
 	yes = "h.html"
 	return yes
-	# return file
-	# url = "file:///home/sankalp/p1/h.html"
-	# webbrowser.open(url,new=new)
+
 def print_sad_news(news):
 	file = "templates/s.html"
 	l = open(file, "w")
@@ -239,7 +235,7 @@ def print_sad_news(news):
 	</div>
 	<div class="card">
 	<div class="footer">
-		<h>Developed by Sankalp Jaiswal</h>
+		<h>Developed by Sankalp Jaiswal &#169</h>
 	</div>
 	</div>
 	</body>
@@ -259,9 +255,8 @@ def print_sad_news(news):
 	l.write(alls)
 	l.close()
 	yes = "s.html"
-	# url = "file:///home/sankalp/p1/"
-	# webbrowser.open(url,new=new)
 	return yes
+
 def print_all_news(news):
 	file = "templates/n.html"
 	if 1:
@@ -350,7 +345,7 @@ def print_all_news(news):
 		</div>
 		<div class="card">
 		<div class="footer">
-			<h>Developed by Sankalp Jaiswal</h>
+			<h>Developed by Sankalp Jaiswal &#169</h>
 		</div>
 		</div>
 		</body>
@@ -369,8 +364,6 @@ def print_all_news(news):
 		alls = (str(text[:i + len("""<div class="row">""")]) + str(hahh) + str(text[i + len("""<div class="row">"""):]))
 		l.write(alls)
 		l.close()
-	# url = "file:///home/sankalp/p1/"
-	# webbrowser.open(url,new=new)
 	yes = "n.html"
 	return yes
 
