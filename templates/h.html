@@ -1,0 +1,125 @@
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	/* Add a gray background color with some padding */
+	body {
+	  font-family: "Trebuchet MS", Helvetica, sans-serif;
+	  padding: 20px;
+	  background: #f1f1f1;
+	}
+
+	/* Header/Blog Title */
+	.header {
+	  padding: 30px;
+	  font-size: 40px;
+	  text-align: center;
+	  background: white;
+	  border-radius: 10px
+	}
+
+	/* Create two unequal columns that floats next to each other */
+	/* Left column */
+	.leftcolumn {   
+	  float: left;
+	  width: 75%;
+	}
+
+	/* Right column */
+	.rightcolumn {
+	  float: left;
+	  width: 25%;
+	  padding-left: 20px;
+	}
+
+
+
+	/* Add a card effect for articles */
+	.card {
+	   background-color: white;
+	   padding: 20px;
+	   margin-top: 20px;
+	   border-radius: 10px
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 800px) {
+	  .leftcolumn, .rightcolumn {   
+	    width: 100%;
+	    padding: 0;
+	  }
+	}
+	</style>
+	</head>
+	<body>
+
+	<div class="header">
+	  <h2>Top Happy Stories :)</h2>
+	</div>
+
+	<div class="row">
+		  <div class="card">
+			<h2>Former Manchester City midfielder David Silva tests positive for coronavirus</h2>
+			<p>Former Manchester City midfielder David Silva had joined Real Sociedad
+earlier this month on a free transfer and tested positive within 72 hours of
+landing in Spain</p>
+		  </div>
+		  <div class="card">
+			<h2>US Open: Top seed Pliskova, Kerber sail into second round</h2>
+			<p>US Open 2020: Top seed Karolina Pliskova got off to a fine start as she
+defeated Anhelina Kalinina 6-4, 6-0 to make it to the second round of the
+first Grand Slam tournament post the enforced break due to novel coronavirus.</p>
+		  </div>
+		  <div class="card">
+			<h2>Ladakh L-G meets MoS Home amid fresh provocation by Chinese troops at LAC</h2>
+			<p>Ladakh's lieutenant-governor met with Minister of State for Home Affairs in
+New Delhi to apprise him of the situation at the Line of Actual Control in
+eastern Ladakh.</p>
+		  </div>
+		  <div class="card">
+			<h2>Pranab Mukherjee was like guide for us, didn't believe in political untouchability: RSS</h2>
+			<p>Condoling the demise of former President Pranab Mukherjee, RSS chief Mohan
+Bhagwat described him as a "guide" for the Sangh and said he didn't believe
+in political untouchability.</p>
+		  </div>
+		  <div class="card">
+			<h2>Pranab Mukherjee: Mirati man who craved slice of village</h2>
+			<p>Pranab Mukherjee strode the corridors of power in New Delhi like a colossus,
+but always craved the slice of his ancestral village Mirati in West Bengal's
+Birbhum district.</p>
+		  </div>
+		  <div class="card">
+			<h2>Will tweet carefully but won't stop speaking up: Prashant Bhushan</h2>
+			<p>Prashant Bhushan said that he may become mindful of he tweets, but he won't
+stop speaking up against what he thinks is wrong.</p>
+		  </div>
+		  <div class="card">
+			<h2>James Rodriguez likely to join Everton after moving out of Real Madrid</h2>
+			<p>Colombian striker James Rodriguez had made a high-profile move to Real Madrid
+in 2014, but with only 14 appearances last season, he is considering a move
+to Everton</p>
+		  </div>
+	</div>
+	<div class="card">
+	<div class="footer">
+		<h>Developed by Sankalp Jaiswal</h>
+	</div>
+	</div>
+	</body>
+	</html>
+
+	

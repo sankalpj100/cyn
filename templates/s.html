@@ -1,0 +1,108 @@
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	/* Add a gray background color with some padding */
+	body {
+	  font-family: "Trebuchet MS", Helvetica, sans-serif;
+	  padding: 20px;
+	  background: #f1f1f1;
+	}
+
+	/* Header/Blog Title */
+	.header {
+	  padding: 30px;
+	  font-size: 40px;
+	  text-align: center;
+	  background: white;
+	  border-radius: 10px
+	}
+
+	/* Create two unequal columns that floats next to each other */
+	/* Left column */
+	.leftcolumn {   
+	  float: left;
+	  width: 75%;
+	}
+
+	/* Right column */
+	.rightcolumn {
+	  float: left;
+	  width: 25%;
+	  padding-left: 20px;
+	}
+
+
+
+	/* Add a card effect for articles */
+	.card {
+	   background-color: white;
+	   padding: 20px;
+	   margin-top: 20px;
+	   border-radius: 10px
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 800px) {
+	  .leftcolumn, .rightcolumn {   
+	    width: 100%;
+	    padding: 0;
+	  }
+	}
+	</style>
+	</head>
+	<body>
+
+	<div class="header">
+	  <h2>Top Sad Stories :(</h2>
+	</div>
+
+	<div class="row">
+		  <div class="card">
+			<h2>Pulwama suicide attack case: Special NIA court to hold first hearing today</h2>
+			<p>The first hearing in the crucial Pulwama terror attack case will be held
+today at a special NIA court in Jammu.</p>
+		  </div>
+		  <div class="card">
+			<h2>BJP says 'Mann Ki Baat' dislikes were a Congress bot job </h2>
+			<p>PM Modi's August 30 'Mann Ki Baat', which has garnered over 7.2 lakh dislikes
+till the filing of this story against less than 1.2 lakh likes out of over 3
+million views.</p>
+		  </div>
+		  <div class="card">
+			<h2>Handling Indian economy after Covid-19 like '50-over match': CEA on GDP</h2>
+			<p>"Covid-19 pandemic has led to worst global economic crisis since 1870 but
+power consumption, e-way bills indicate Indian economy on path to revival,"
+chief economic advisor (CEA) to the Government of India, KV Subramanian told
+India Today after the Centre released GDP data for the first quarter of
+FY2020-21.</p>
+		  </div>
+		  <div class="card">
+			<h2>Mumbai: 4 dead after speeding car runs them over at Crawford Market</h2>
+			<p>Four people were killed after a speeding car ran over them at Mumbai's
+historic Crawford Market on Monday evening.</p>
+		  </div>
+	</div>
+	<div class="card">
+	<div class="footer">
+		<h>Developed by Sankalp Jaiswal</h>
+	</div>
+	</div>
+	</body>
+	</html>
+
+	
